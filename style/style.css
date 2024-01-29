@@ -1,0 +1,340 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+
+    width: 1080px;
+}
+
+.intro__title {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120%;
+
+    margin: 0;
+    padding-top: 60px;
+}
+
+.intro__p {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+
+    padding-top: 30px;
+    margin: 0;
+}
+
+.intro__navigation {
+    padding-top: 50px;
+}
+
+.intro__div {
+    border-radius: 10px;
+    background-color: #F1F1F1;
+
+    padding: 25px 30px; 
+    margin-bottom: 50px;
+}
+
+.intro__h-2 {
+    margin: 0;
+
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; 
+}
+
+.bold {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; 
+}
+
+.italic{
+    font-family:'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.intro__list {
+    margin: 0;
+    padding-top: 20px;
+
+    color: #02535F;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.intro__item {
+    padding-top: 10px;
+}
+
+.intro__item:first-child {
+    padding-top: 0;
+}
+
+.intro__anchor {
+    color: #02535F;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+/* Отступ задается от предыдущего элемента к следующему */
+
+.block-1__h {
+    margin: 0;
+
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120%;
+}
+
+.block-1__column-1 {
+    margin: 0;
+    display: block;
+    /* width: 100%; */
+    /* height: auto; */
+    padding: 0;
+} 
+
+.block-1__pic {
+    display: inline-block;
+    padding-top: 30px;
+    width: 560px;
+}
+
+.block-1__div {
+    display: inline-block;
+    max-width: 490px;
+}
+
+.block-1__text {
+    margin: 0;
+    padding-top: 30px;
+    padding-left: 30px;
+    
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; 
+}
+
+.block-1__column-2 {
+    display: block;
+    padding-top: 30px;
+    /* width: 45%; */
+}
+
+.block-1__div-2 {
+    display: inline-block;
+}
+
+.block-1__text-2 {
+    /* display: inline-block; */
+    margin: 0;
+    padding-top: 30px;
+    width: 480px;
+
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.block-1__pic-2 {
+    display: inline-block;
+    height: 279px;
+    padding-left: 30px;
+}
+
+
+/* Отступ задается последнему возможному элементу в DOM-дереве */
+
+.block-2__h {
+    display: block;
+    padding-top: 50px;
+    margin: 0;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120%; 
+}
+
+.block-2__text {
+    margin: 0;
+    padding-top: 30px;
+
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; 
+}
+
+.block-2__text-before-border {
+    margin: 0;
+    padding-top: 30px;
+
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; 
+    margin-bottom: 30px;
+}
+
+.block-2__text:last-of-type {
+    margin-bottom: 30px;
+}
+
+.block-2__pic {
+    display: block;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+.block-2__border {
+    border: 1px solid #000;
+}
+
+.block-2__pic-2 {
+    display: block;
+    margin: 0 auto;
+}
+
+.block-2__text-gray {
+    padding-top: 15px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 1020px;
+    color: #5E5E5E;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+/* Для последнего элемента группы отступ всегда обнуляется */
+
+.block-3__h {
+    margin: 0;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120%;
+}
+
+.block-3__text {
+    margin: 0;
+    padding-top: 30px;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.block-3__pic {
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.block-3__pic-3 {
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.block-3__pic-4 {
+    display: block;
+    margin: 0 auto;
+}
+
+.block-3__pic:last-of-type {
+    margin-bottom: 50px;
+}
+
+/* Подытожим */
+
+.footer {
+    border-radius: 10px;
+    background-color: #F1F1F1;
+    margin-bottom: 50px;
+} 
+
+.footer__h {
+    margin: 0;
+    padding-top: 25px;
+    padding-left: 45px;
+
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; 
+}
+
+.footer__item {
+    list-style: none;
+}
+
+.footer__item {
+padding-top: 10px;
+
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.footer__text {
+    margin: 0; 
+    padding-top: 30px;
+    padding-left: 45px;
+    padding-bottom: 25px;
+
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
