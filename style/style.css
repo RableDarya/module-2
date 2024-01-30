@@ -1,7 +1,7 @@
 .container {
     width: 80%;
     margin: 0 auto;
-
+    padding-top: 60px;
     width: 1080px;
 }
 
@@ -12,9 +12,8 @@
     font-style: normal;
     font-weight: 900;
     line-height: 120%;
-
-    margin: 0;
-    padding-top: 60px;
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 .intro__p {
@@ -24,20 +23,20 @@
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
-
-    padding-top: 30px;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
-.intro__navigation {
-    padding-top: 50px;
-}
+.container-nav {
+    /* width: 80%; */
+    display: block;
+    margin: 0 auto;
+    width: 1140px;
 
-.intro__div {
     border-radius: 10px;
     background-color: #F1F1F1;
 
-    padding: 25px 30px; 
+    padding: 25px 45px; 
     margin-bottom: 50px;
 }
 
@@ -71,6 +70,7 @@
 .intro__list {
     margin: 0;
     padding-top: 20px;
+    padding-left: 30px;
 
     color: #02535F;
     font-family: 'Roboto', sans-serif;
@@ -95,12 +95,23 @@
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
+    text-decoration: none;
+    border-bottom: 1px solid #02535F;
+
 }
 
 /* Отступ задается от предыдущего элемента к следующему */
 
+.container-1 {
+    width: 80%;
+    margin: 0 auto;
+
+    width: 1080px;
+}
+
 .block-1__h {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 30px;
 
     color: #000;
     font-family: 'Roboto', sans-serif;
@@ -113,26 +124,27 @@
 .block-1__column-1 {
     margin: 0;
     display: block;
-    /* width: 100%; */
-    /* height: auto; */
     padding: 0;
+    margin-bottom: 30px;
 } 
 
 .block-1__pic {
     display: inline-block;
-    padding-top: 30px;
-    width: 560px;
+    width: 550px;
 }
 
 .block-1__div {
     display: inline-block;
-    max-width: 490px;
+    position: absolute;
+    width: 490px;
+
+    padding-left: 30px;
 }
 
 .block-1__text {
     margin: 0;
-    padding-top: 30px;
-    padding-left: 30px;
+    margin-bottom: 30px;
+    /* padding-left: 30px;  */
     
     color: #000;
     font-family: 'Roboto', sans-serif;
@@ -144,7 +156,8 @@
 
 .block-1__column-2 {
     display: block;
-    padding-top: 30px;
+    margin-bottom: 50px;
+    /* padding-top: 30px; */
     /* width: 45%; */
 }
 
@@ -154,8 +167,8 @@
 
 .block-1__text-2 {
     /* display: inline-block; */
-    margin: 0;
-    padding-top: 30px;
+    margin-top: 0;
+    margin-bottom: 30px;
     width: 480px;
 
     color: #000;
@@ -175,10 +188,17 @@
 
 /* Отступ задается последнему возможному элементу в DOM-дереве */
 
+.container-2 {
+    width: 80%;
+    margin: 0 auto 50px;
+
+    width: 1080px;
+}
+
 .block-2__h {
     display: block;
-    padding-top: 50px;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 30px;
     color: #000;
     font-family: 'Roboto', sans-serif;
     font-size: 36px;
@@ -188,9 +208,18 @@
 }
 
 .block-2__text {
-    margin: 0;
-    padding-top: 30px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; 
+}
 
+.block-2__text-2 {
+    margin: 0;
     color: #000;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -201,7 +230,6 @@
 
 .block-2__text-before-border {
     margin: 0;
-    padding-top: 30px;
 
     color: #000;
     font-family: 'Roboto', sans-serif;
@@ -218,12 +246,12 @@
 
 .block-2__pic {
     display: block;
-    padding-top: 30px;
-    margin: 0 auto;
+    margin: 0 auto 30px;
 }
 
 .block-2__border {
     border: 1px solid #000;
+    margin-bottom: 30px;
 }
 
 .block-2__pic-2 {
@@ -246,8 +274,16 @@
 
 /* Для последнего элемента группы отступ всегда обнуляется */
 
+.container-3 {
+    width: 80%;
+    margin: 0 auto 50px;
+
+    width: 1080px;
+}
+
 .block-3__h {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 30px;
     color: #000;
     font-family: 'Roboto', sans-serif;
     font-size: 36px;
@@ -258,7 +294,7 @@
 
 .block-3__text {
     margin: 0;
-    padding-top: 30px;
+    margin-bottom: 30px;
     color: #000;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -269,26 +305,31 @@
 
 .block-3__pic {
     display: block;
-    margin: 0 auto;
-    padding-top: 30px;
+    margin: 0 auto 30px;
 }
 
 .block-3__pic-3 {
     display: block;
     margin: 0 auto;
-    padding-top: 30px;
 }
 
 .block-3__pic-4 {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 30px;
 }
 
-.block-3__pic:last-of-type {
+/* .block-3__pic:last-of-type {
     margin-bottom: 50px;
-}
+} */
 
 /* Подытожим */
+
+.container-4 {
+    width: 80%;
+    margin: 0 auto;
+
+    width: 1080px;
+}
 
 .footer {
     border-radius: 10px;
@@ -311,10 +352,11 @@
 
 .footer__item {
     list-style: none;
+    margin: 0;
 }
 
 .footer__item {
-padding-top: 10px;
+    margin-bottom: 10px;
 
     color: #000;
     font-family: 'Roboto', sans-serif;
@@ -324,9 +366,12 @@ padding-top: 10px;
     line-height: 120%;
 }
 
+.footer__item:last-child {
+    margin-bottom: 30px;
+}
+
 .footer__text {
     margin: 0; 
-    padding-top: 30px;
     padding-left: 45px;
     padding-bottom: 25px;
 
