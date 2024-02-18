@@ -1,0 +1,107 @@
+.room {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.room__h {
+    text-align: center;
+    margin-bottom: 60px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Arial;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.room__column {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 1040px;
+    padding-bottom: 100px;
+}
+
+.room__column-position, 
+.room__column-position-sw, 
+.room__column-position-ww, 
+.room__column-position-neon {
+    
+    width: 510px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Arial;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 114.286% ;
+    text-transform: uppercase;
+}
+
+
+
+.room__page-80 {
+    display: flex;
+    padding: 8.438rem;
+
+    content: " ";
+    background-image: url(../img/vibes.png);
+    text-align: center;
+    background-size: 100% 100%;
+    /* background-position: center; */
+    /* height: 349px; */
+    background-repeat: no-repeat;
+}
+
+.room__page-sw {
+    display: flex;
+    padding: 8.438rem;
+
+    content: " ";
+    background-image: url(../img/starwars.png);
+    background-size: 100% 100%;
+    /* background-position: center; */
+    /* height: 349px; */
+    background-repeat: no-repeat;
+}
+
+.room__page-ww {
+    display: flex;
+    /* flex-direction: row; 
+    justify-content: center;
+    align-content: center; */
+    padding: 8.438rem;
+
+    content: " ";
+    background-image: url(../img/wildwest.png);
+    background-size: 100% 100%;
+    /* background-position: center; */
+    /* height: 349px; */
+    
+    background-repeat: no-repeat;
+}
+
+.room__page-neon {
+    display: flex;
+    /* flex-direction: row;
+    justify-content: center;
+    align-content: center; */
+    padding: 8.438rem;
+
+
+    content: " ";
+    background-image: url(../img/neon.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+

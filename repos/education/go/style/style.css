@@ -1,0 +1,57 @@
+html {
+    position: relative;
+    box-sizing: border-box;
+
+    font-size: 16px;
+}
+  
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    min-width: 320px;
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+    /* font-size: 16px; */
+    font-weight: 400;
+
+    color: #fff;
+    background-color: #000; 
+}
+
+image {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1, h2, h3, p, fieldset, figure {
+    margin: 0;
+}
+
+.page__div {
+    width: 80%;
+    margin: auto;
+}
+
+

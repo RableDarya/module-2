@@ -1,0 +1,302 @@
+.booking {
+    display: flex;
+    width: 90rem; 
+    margin: auto;
+    background-color: rgb(68, 15, 81);
+}
+
+.booking__div{
+    display: flex;
+    flex-direction: column;
+}
+
+.booking__h{
+    text-align: center;
+    margin-bottom: 40px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Arial;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.booking__p {
+    text-align: center;
+    margin-bottom: 40px;
+
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+/* выбери зал*/
+
+.booking__form-item {
+    display: flex;
+    justify-content: space-around;
+    border: 0;
+    margin-bottom: 60px;
+}
+
+.booking__form-item-room {
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    border-radius: 8px; 
+    background-color: rgb(255, 255, 255);
+    padding: 7px 15px;
+    cursor: pointer;
+}
+
+.booking__input-room {
+    display: none;
+}
+
+/* набор развлеченией */
+
+.booking__fildset-set-of-entertainment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 0;
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0%;
+}
+
+.booking__form-title-entertainments {
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.booking__fildset-console,
+.booking__fildset-board-game,
+.booking__fildset-extra {
+    display: flex;
+    flex-direction: column;
+    border: 0;;
+}
+
+.booking__form-subtitle,
+.booking__form-title-game,
+.booking__form-title-extra {
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0%; 
+    margin-bottom: 24px;
+}
+
+.booking__lable {
+    margin-bottom: 21px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0%;
+}
+
+.booking__form-item-entertainments {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.booking__form-item-entertainments::before {
+    content: '';
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    background-color: rgb(255, 255, 255);
+}
+
+.booking__form-item-game::before,
+.booking__form-item-extra::before {
+    content: '';
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    background-color: rgb(255, 255, 255);
+}
+
+.booking__form-item-entertainments,
+.booking__form-item-game,
+.booking__form-item-extra{
+    display: block;
+    margin-bottom: 22px;
+}
+
+.booking__input {
+    margin-right: 12px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+
+/* время дата */
+
+.booking__fildset {
+    border: 0;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.booking__form-title-date {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0%;
+    margin-bottom: 38px;
+}
+
+.booking__date-time {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.booking__form-item-date,
+.booking__form-item-time {
+    display: flex;
+    flex-direction: row;
+    padding-top: 14px;
+}
+
+.booking__name,
+.booking__contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking__date-time-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.booking__input-date {
+    width: 134px;
+    height: 52px;
+    margin-right: 32px;
+    margin-bottom: 32px;
+
+    color: rgb(33, 30, 30);
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+}
+
+.booking__input-quantity {
+    width: 300px;
+    height: 52px;
+
+    color: rgb(33, 30, 30);
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+}
+
+
+.booking__name{
+    margin-right: 50px;
+}
+
+.booking__lable-name {
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0%;
+}
+
+.booking__form-item-first-name,
+.booking__form-item-dsecond-name,
+.booking__form-item-phone,
+.booking__form-item-mail {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+}
+
+.booking__input-name {
+    width: 280px;
+    height: 52px;
+}
+
+.booking__lable {
+    margin: 0;
+}
+
+
+
+
+/* btn */
+
+.booking__lable-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.booking__input-submit {
+    color: rgb(108, 2, 135);
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    padding: 16px 50px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    margin-bottom: 80px;
+}
+
