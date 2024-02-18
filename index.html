@@ -1,112 +1,291 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/normalize.css">
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-    <title>indentation</title>
-</head>
-<body class="page">
-    <article class="article">
-        <section class="caption">
-            <div class="container">
-                <h1 class="caption__title">Отступы в вёрстке: margin и padding</h1>
-                <p class="caption__p">В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения смысла и хорошей читаемости вашего кода. Если точнее — речь пойдет об основных правилах организации отступов. Они сильно влияют на общую функциональность кода и, если всё сделано верно, позволяют легко вносить изменения в любую его часть. При этом другие части кода продолжат нормально работать.</p>
-                <p class="caption__p">Как это часто бывает, знание базовых принципов поможет проявить гибкость и выйти за их пределы. Эти знания особенно важны для начинающих, но также будут полезным напоминанием и для более опытных верстальщиков. Итак, поговорим о фундаментальных основах работы с отступами в вёрстке.</p>
-            </div>
-        </section>
+    <head>
+        <meta charset="utf-8">
+        <link type="image/svg+xml" rel="icon" href="./img/icon.svg">
+        <link rel="stylesheet" href="./style/index.css">
+        <link rel="stylesheet" href="./style/normalize.css">
+        <title>GO</title>
+    </head>
+        <body class="page">
+            <nav class="navigation">
+                <img class="navigation__pic" src="./img/logo.svg" alt="логотип">
+                <ul class="navigation__list">
+                    <li class="navigation__items">залы</li>
+                    <li class="navigation__items">нас</li>
+                    <li class="navigation__items">бронь</li>
+                    <li class="navigation__items">отзывы</li>
+                    <li class="navigation__items">контакты</li>
+                </ul>
+                <button class="navigation__btn">Заказать звонок</button>
+            </nav>
 
-        <section class="intro">
-            <div class="container-nav">
-                <h2 class="intro__h-2">Содержание:</h2>
-                <ol class="intro__list">
-                    <li class="intro__item"><a class="intro__anchor" href="#block-1">Отступ задается от предыдущего элемента к следующему</a></li>
-                    <li class="intro__item"><a class="intro__anchor" href="#block-2">Отступ задается последнему возможному элементу в DOM-дереве</a></li>
-                    <li class="intro__item"><a class="intro__anchor" href="#block-3">Для последнего элемента группы отступ обнуляется</a></li>
-                </ol>
-            </div>
-        </section>
-    
-        <section class="paragraph-from-previous">
-            <div class="container">
-            <h2 class="paragraph-from-previous__h" id="block-1">Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.</h2>
-            <div class="paragraph-from-previous__column-1">
-                <img class="paragraph-from-previous__pic" src="./image/image1.png" alt="фото с примером 1">
-                <div class="paragraph-from-previous__div">
-                    <p class="paragraph-from-previous__text"><span class="bold">ВАЖНО:</span> <span class="italic">margin</span> всегда задают от предыдущего элемента к следующему.</p>
-                    <p class="paragraph-from-previous__text">Свойство <span class="italic">margin</span> необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется <span class="italic">margin-right</span> и <span class="italic">margin-bottom</span>.</p>
-                    <p class="paragraph-from-previous__text">(!) Свойства <span class="italic">margin-left</span> и <span class="italic">margin-top</span> используются крайне редко.</p>
-                    <p class="paragraph-from-previous__text">Для <span class="italic">padding</span> верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.</p>
+            <section class="page__section"> 
+                <div class="container">
+                    <header class="header">
+                        <h1 class="header__title">GAME OVER</h1>
+                        <p class="header__subtitle">Новый формат игр и отдыха</p>
+                        <div class="header__pic"></div>
+                        <div class="header__row">
+                            <div class="header__col">
+                                <p class="header__p-violet">4</p>
+                                <p class="header__p-room">Тематических зала</p>
+                            </div>
+                            <div  class="header__col-2">
+                                <p class="header__p-violet-2">new</p>
+                                <p class="header__p-new">Новейшая аппаратура</p>
+                            </div>
+                        </div>
+                        <button class="header__btn">забронировать</button>
+                        <a href="#header__link-btn-2"><div class="header__btn-2"><img class="header__btn-2-element" src="./img/Фигура1.png" alt="кнопка"></div></div></a>
+                            
+                    </header> 
                 </div>
-            </div>
-            <div class="paragraph-from-previous__column-2">
-                <div class="paragraph-from-previous__div-2">
-                    <p class="paragraph-from-previous__text-2">Отступ внутри блока сверху или слева реализуется через <span class="italic">padding-top</span> и <span class="italic">padding-left</span> родителя.</p>
-                    <p class="paragraph-from-previous__text-2">Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.</p>
-                    <p class="paragraph-from-previous__text-2">Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков или свойств родителя.</p>
+            </section>
+
+            <section class="we-have" id="header__link-btn-2">
+                <div class="container">
+                    <h2 class="we-have__h">У нас есть все для классного отдыха с друзьями!</h2>
+                    <div class="we-have__col">
+                        <p class="we-have__pic-VR"></p>
+                        <p class="we-have__pic-audio">Аудио-система 5.1 с отличным звуком</p>
+                        <p class="we-have__pic-micro">Караоке (4 микрофона)</p>
+                        <p class="we-have__pic-game">Настольные игры</p>
+                        <p class="we-have__pic-movie">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
+                        <p class="we-have__pic-ps">РlаyStаtiоn 5 </p>
+                    </div>
                 </div>
-                <img class="paragraph-from-previous__pic-2" src="./image/image2.png" alt="фото с примером 2">
-            </div>
-            </div>
-        </section>
+            </section>
     
-        <section class="paragraph-to-last">
-            <div class="container">
-                <h2 class="paragraph-to-last__h" id="block-2">Отступ задается последнему возможному элементу в DOM-дереве</h2>
-                <p class="paragraph-to-last__text">Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:</p>
-                <img class="paragraph-to-last__pic" src="./image/image3.png" alt="фото с примером 3">
-                <img class="paragraph-to-last__pic" src="./image/image4.png" alt="фото с примером 4">
-                <p class="paragraph-to-last__text-before-border">Отступ делают за счёт соседних элементов, а не дочерних:</p>
-                <div class="paragraph-to-last__border">
-                    <img class="paragraph-to-last__pic-2" src="./image/image5.png" alt="фото с примером 5">
-                    <p class="paragraph-to-last__text-gray"><span class="bold">ВАЖНО:</span> здесь <span class="italic">.list-item</span> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.</p>
+            <main class="main-content">
+                <section class="room">
+                    <div class="container">
+                        <h2 class="room__h" id="room">Наши залы</h2>
+                    <ol class="room__column">
+                        <li class="room__column-position">
+                            <a class="room__page-80" href="vibes.html"> 80's vibes</a>
+                        </li>
+                        <li class="room__column-position-sw">
+                            <a class="room__page-sw" href="starwars.html"> Star wars</a>
+                        </li>
+                        <li class="room__column-position-ww">
+                            <a class="room__page-ww" href="wildwest.html"> Wild west</a>
+                        </li>
+                        <li class="room__column-position-neon">
+                            <a class="room__page-neon" href="neon.html"> Neon style</a>
+                        </li>
+                    </ol>
+                    </div>
+                </section>
+        
+                <section class="booking">
+                    <div class="container">
+                        <h2 id="booking" class="booking__h">Забронировать зал просто</h2>
+                        <p class="booking__p">Выбери зал</p>
+                    <div class="booking__div">
+                        <form class="booking__form" name="my-form" action="https://jsonplaceholder.typicode.com/posts" method="post" enctype="application/x-www-form-urlencoded">
+                            <div class="booking__block">
+                                <fieldset class="booking__form-item">
+                                    <label class="booking__lable">
+                                        <span class="booking__form-item-room"><input class="booking__input-room" type="radio" name="room" value="80vibes">80’s vibes</span>
+                                    </label>
+                                    <label class="booking__lable">
+                                        <span class="booking__form-item-room"><input class="booking__input-room" type="radio" name="room" value="starwars">Star wars</span>
+                                    </label>
+                                    <label class="booking__lable">
+                                        <span class="booking__form-item-room"><input class="booking__input-room" type="radio" name="room" value="wildwest">Wild west</span>
+                                    </label>
+                                    <label class="booking__lable">
+                                        <span class="booking__form-item-room"><input class="booking__input-room" type="radio" name="room" value="neonstyle">Neon style</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        <fieldset class="booking__fildset-set-of-entertainment">
+                            <legend class="booking__form-title-entertainments">Собери свой набор развлечений</legend>
+                            <fieldset class="booking__fildset-console">
+                                <legend class="booking__form-subtitle">Приставка:</legend>
+                                <label class="booking__lable-entertainments">
+                                    <span class="booking__form-item-entertainments"><input class="booking__input" type="radio" name="gametype1" value="playstation">PlayStation</span>
+                                </label>
+                                <label class="booking__lable-entertainments">
+                                    <span class="booking__form-item-entertainments"><input class="booking__input" type="radio" name="gametype1" value="segamegadrive">Sega Mega Drive</span>
+                                </label>
+                                <label class="booking__lable-entertainments">
+                                    <span class="booking__form-item-entertainments"><input class="booking__input" type="radio" name="gametype1" value="xboxones">X-box One S</span>
+                                </label>
+                                <label class="booking__lable-entertainments">
+                                    <span class="booking__form-item-entertainments"><input class="booking__input" type="radio" name="gametype1" value="dendy">Dendy</span>
+                                </label>
+                            </fieldset>
+                            <fieldset class="booking__fildset-board-game">
+                                <legend class="booking__form-title-game">Настольные игры:</legend>
+                                    <label class="booking__lable">
+                                        <span class="booking__form-item-game"><input class="booking__input" type="checkbox" name="gametype2" value="jenga">Jenga</span>
+                                    </label>
+                                    <label class="booking__lable">
+                                        <span class="booking__form-item-game"><input class="booking__input" type="checkbox" name="gametype2" value="monopoly">Monopoly</span>
+                                    </label>
+                                    <label class="booking__lable">
+                                        <span class="booking__form-item-game"><input class="booking__input" type="checkbox" name="gametype2" value="manchkin">Манчкин</span>
+                                    </label>
+                                    <label class="booking__lable">
+                                        <span class="booking__form-item-game"><input class="booking__input" type="checkbox" name="gametype2" value="alias">Alias</span>
+                                    </label>
+                                </fieldset>
+                                <fieldset class="booking__fildset-extra">
+                                    <legend class="booking__form-title-extra">Дополнительное:</legend>
+                                    <label class="booking__lable">
+                                        <span class="booking__form-item-extra"><input class="booking__input" type="checkbox" name="other" value="karaoke">Караоке</span>
+                                    </label>
+                                    <label class="booking__lable">
+                                        <span class="booking__form-item-extra"><input class="booking__input" type="checkbox" name="other" value="vr">VR</span>
+                                    </label>
+                                </fieldset>
+                            </fieldset>
+                            <fieldset class="booking__fildset">
+                                <legend class="booking__form-title-date">Выбери дату и время:</legend>
+                                <div class="booking__date-time">
+                                    <div class="booking__date-time-row">
+                                        <label class="booking__lable">
+                                            <span class="booking__form-item-date"><input class="booking__input-date" type="date" name="date" value="" placeholder="Дата" required></span>
+                                        </label>
+                                        <label class="booking__lable">
+                                            <span class="booking__form-item-time"><input class="booking__input-date" type="time" name="time" placeholder="Время" required></span>
+                                        </label>
+                                    </div>
+                                    
+                                    <label class="booking__lable">
+                                        <span class="booking__form-item-quantity"><input class="booking__input-quantity" type="text" name="quantity" placeholder="Сколько человек" required></span>
+                                    </label>
+                                </div>
+                                
+                                <div class="booking__name">
+                                    <label class="booking__lable-name">
+                                        <span class="booking__form-item-first-name">Имя<input class="booking__input-name" type="text" name="first-name" required></span>
+                                    </label>
+                                    
+                                    <label class="booking__lable-name">
+                                        <span class="booking__form-item-dsecond-name">Фамилия<input class="booking__input-name" type="text" name="second-name" required></span>
+                                    </label>
+                                </div>
+                                
+                                <div class="booking__contacts">
+                                    <label class="booking__lable-name">
+                                        <span class="booking__form-item-phone">Телефон<input class="booking__input-name" type="tel" name="phone" required></span>
+                                    </label>
+                                    <label class="booking__lable-name">
+                                        <span class="booking__form-item-mail">E-mail<input class="booking__input-name" type="mail" name="mail" required></span>
+                                    </label>
+                                </div>
+                                <!-- <br>
+                                <label class="booking__lable">
+                                    <span class="booking__form-item-age"><input class="booking__input" type="checkbox" name="age" required>Я старше 18 лет </span>
+                                </label> -->
+                            </fieldset>
+                            <label class="booking__lable-btn">
+                                <span class="booking__form-item-submit"><input class="booking__input-submit" type="submit" value="Забронировать"></span>
+                            </label>
+                            <!-- <label class="booking__lable">
+                                <span class="booking__form-item-agree"><input class="booking__input" type="checkbox" name="agree" required>Я согласен на обработку данных</span>
+                            </label> -->
+                        </form>
+                    </div>
+                    </div>
+                </section>
+        
+                <section class="about">
+                <div class="container">
+                    <h2 class="about__h" id="about">О нас</h2>
+                <div class="about__paragraph">
+                    <img class="about__img" src="./img/collage.png" alt="pictuare">
+                    <div class="about__block">
+                        <p class="about__text">Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности в центральной части города.</p>
+                        <p class="about__text-2">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
+                        <aside class="about__aside">
+                            <blockquote class="quote">
+                                    <p class="quote__text"><span class="quote__text-style-mark-1"></span> GAME OVER — это место незабываемых впечатлений <span class="quote__text-style-mark-2"></span></p>
+                                <span class="quote__column">
+                                    <img  class="quote__column-image-ellipse" src="./img/ellipse2.jpg" alt="">
+                                    <cite class="quote__column-text-2">Аркадий Абакшин, создатель игровой территории GAME OVER</cite>
+                                </span>
+                            </blockquote>
+                        </aside>
+                    </div>
                 </div>
-                <p class="paragraph-to-last__text">Казалось бы, можно задать отступ параграфу <span class="italic">&#60;p&#62;</span>, либо обёртке <span class="italic">&#60;article&#62;</span> для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.</p>
-                <p class="paragraph-to-last__text">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</p>
-                <img class="paragraph-to-last__pic" src="./image/image6.png" alt="фото с примером 6">
-                <p class="paragraph-to-last__text">В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <span class="italic">section</span>. Именно для него задается <span class="italic">padding-top</span>, а не <span class="italic">div</span> с классом <span class="italic">container</span>. Свойства <span class="italic">margin</span>, которые стоят по умолчанию необходимо обнулить.</p>
-                <img class="paragraph-to-last__pic" src="./image/image7.png" alt="фото с примером 7">
-                <p class="paragraph-to-last__text-2">Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной структурой отступов.</p>
-            </div>
-        </section>
+                </div>
+                </section>
+            </main>
     
-        <section class="paragraph-reset-to-zero">
-            <div class="container">
-                <h2 class="paragraph-reset-to-zero__h" id="block-3">Для последнего элемента группы отступ всегда обнуляется</h2>
-                <p class="paragraph-reset-to-zero__text">Для наглядности возьмём наш предыдущий пример с рецептами</p>
-                <p class="paragraph-reset-to-zero__text">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.</p>
-                <img class="paragraph-reset-to-zero__pic" src="./image/image8.png" alt="фото с примером 8">
-                <p class="paragraph-reset-to-zero__text">В соответствии со вторым принципом: последний <span class="italic">margin</span> обнуляется, а нижний отступ задаётся через <span class="italic">padding</span> для <span class="italic">section</span>. Я чаще всего задаю <span class="italic">padding</span> для секции с обоих сторон, если расстояние между секциями 100px задаю секциям <span class="italic">padding-top:50px</span> и <span class="italic">padding-bottom:50px</span>.</p>
-                <img class="paragraph-reset-to-zero__pic" src="./image/image9.png" alt="фото с примером 9">
-                <img class="paragraph-reset-to-zero__pic-3" src="./image/image10.png" alt="фото с примером 10">
-                <img class="paragraph-reset-to-zero__pic-4" src="./image/image11.png" alt="фото с примером 11">
-                <p class="paragraph-reset-to-zero__text">Для большего понимания рассмотрим другой пример, который часто встречается на практике:</p>
-                <img class="paragraph-reset-to-zero__pic" src="./image/image12.png" alt="фото с примером 12">
-                <img class="paragraph-reset-to-zero__pic" src="./image/image13.png" alt="фото с примером 13">
-                <p class="paragraph-reset-to-zero__text">Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:</p>
-                <img class="paragraph-reset-to-zero__pic" src="./image/image14.png" alt="фото с примером 14">
-                <p class="paragraph-reset-to-zero__text">Советую использовать псевдоклассы :last-child чаще других, например так:</p>
-                <img class="paragraph-reset-to-zero__pic" src="./image/image15.png" alt="фото с примером 15">
-            </div>
-        </section>
+                <section class="reviews">
+                <div class="container">
+                    <h2 class="reviews__h" id="reviews">Отзывы посетителей</h2>
+                    <div class="reviews__div">
+                        <figure class="reviews__block">
+                            <div class="reviews__contener">
+                                <img class="reviews__avatar" src="./img/avatar-max.png" alt="аватар" height="200">
+                                <p class="reviews__comment">Отемечали здесь день рождение с компанией друзей, все былло очень круто! VR очки это просто бомба, никогда еще не был в таком полном игровом погружении. Сервис на высоте!</p>
+                            </div>
+                            <figcaption class="reviews__name">Макс Самойлов</figcaption>
+                        </figure>
+                    
+                    </div>
+                    <div class="reviews__div">
+                        <figure class="reviews__block">
+                            <div class="reviews__contener">
+                                <img class="reviews__avatar" src="./img/avatar_ox.png" alt="аватар" height="200">
+                                <p class="reviews__comment">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений.</p>
+                            </div>
+                            <figcaption class="reviews__name">Оксана Григорьева</figcaption>
+                        </figure>
+                    </div>
+                    <div class="reviews__div">
+                        <figure class="reviews__block">
+                            <div class="reviews__contener">
+                                <img class="reviews__avatar" src="./img/avatar-nick.png" alt="аватар" height="200">
+                                <p class="reviews__comment">Немного подвисла игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космоса. </p>
+                            </div>
+                            <figcaption class="reviews__name">Никита Ященко</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                </section> 
+
+            <section class="faq">
+                <div class="container">
+                    <h2 class="faq__h">Частые вопросы</h2>
+                    <ul class="faq__ul">
+                        <li class="faq__item">Можно ли Забронировать комнату онлайн?</li>
+                        <li class="faq__item">Могут ли мне вернуть деньги за бронь?</li>
+                        <li class="faq__item">Какая комната самая популярная?</li>
+                        <li class="faq__item">Как получить VIP карту?</li>
+                        <li class="faq__item">Какая комната самая популярная?</li>
+                    </ul>
+                </div>
+            </section>
     
         <footer class="footer">
-            <div class="container-footer">
-                <h2 class="footer__h">Подытожим:</h2>
-                <ul class="footer__list">
-                    <li class="footer__item">— отступы задаём от предыдущего элемента к следующему</li>
-                    <li class="footer__item">— используем только margin-right и margin-bottom</li>
-                    <li class="footer__item">— внешние отступы задаются только между соседями</li>
-                    <li class="footer__item">— внутренний отступ задаём самому верхнему элементу в дом дереве</li>
-                    <li class="footer__item">— последнему элементу группы отступ всегда обнуляем</li>
-                </ul>
-                <p class="footer__text">Конечно бывают исключения. Ведь макеты бывают различной сложности. Иногда базовые принципы приходится нарушать в угоду дизайнерского решения или простоты вёрстки. Но для этого эти принципы необходимо хорошо знать.</p>
+            <div class="container">
+                <h2 class="footer__h" id="contacts">Контакты</h2>
+            <address class="footer__contacts">
+                <div class="footer__fl-column">
+                    <p class="footer__p"><svg class="footer__contacts-location-icon"></svg>г. Москва ул. Аквамарина, 16</p>
+                    <a class="footer__links" href="tel:89509302893"><svg class="footer__contacts-phone-icon"></svg>8(950)930-28-93</a>
+                    <a class="footer__links" href="mailto:GameOver@gmail.com"><svg class="footer__contacts-mail-icon"></svg>GameOver@gmail.com</a>
+                    <div class="footer__media">
+                        <svg class="footer__media-vk"></svg><a class="footer__media-link" href="#"></a>
+                        <svg class="footer__media-tg"></svg><a class="footer__media-link" href="#"></a>
+                        <svg class="footer__media-pin"></svg><a class="footer__media-link" href="#"></a>
+                        <svg class="footer__media-smth"></svg><a class="footer__media-link" href="#"></a>
+                    </div>
+                </div>
+                <img class="footer__map" src="./img/map.png" alt="карта">
+            </address>
             </div>
+            <div class="footer__game-over">
+                <p class="foorer__c-gm">© Game Over, 2022</p>
+                <p class="disigner">Design by Anastasia Ilina</p>
+            </div>
+            <p class="foorer__disigner-mail">ilina9825@gmail.com</p>
         </footer>
-    </article>
-</body>
+        </body>
 </html>
